@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import Nav from './components/Nav';
 import About from './components/About';
+import Portfolio from './components/Portfolio';
 
 function App() {
   // category sections that a user can navigate to
@@ -26,6 +27,7 @@ function App() {
       ></Nav>
       <main>
         <About></About>
+        <Portfolio></Portfolio>
       </main>
     </div>
   );
