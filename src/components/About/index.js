@@ -1,8 +1,9 @@
 import React from 'react'
+// photo of James Hardin
 import coverImage from "../../assets/images/Headshot.jpg";
 
 function About() {
-
+// about section content
   return (
     <section className="my-5 about-me" >
       <h1 id="about">About me</h1>
