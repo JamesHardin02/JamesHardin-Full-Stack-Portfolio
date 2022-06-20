@@ -1,10 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import Nav from './components/Nav';
-import About from './components/About';
-import Portfolio from './components/Portfolio';
-import Contact from './components/Contact';
-import Resume from './components/Resume';
+import section from './utils/section'
 
 function App() {
   // category sections that a user can navigate to
@@ -20,6 +17,9 @@ function App() {
 
   // state to keep track of which section a user has choosen to view
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
+
+
+
   return (
     <div>
       <Nav
@@ -28,10 +28,7 @@ function App() {
         currentCategory={currentCategory}
       ></Nav>
       <main>
-        <Contact></Contact>
-        <About></About>
-        <Portfolio></Portfolio>
-        <Resume></Resume>
+        {section(currentCategory)}        
       </main>
     </div>
   );
