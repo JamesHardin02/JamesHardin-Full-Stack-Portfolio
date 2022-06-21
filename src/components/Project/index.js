@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
+// screenshot imports //
 import techTalk from "../../assets/images/tech-talk-homepage.png";
 import bookHub from "../../assets/images/user-feed-page.png";
 import rwandaTour from "../../assets/images/rwanda-tour-home-page.png";
 import thoughtBubble from "../../assets/images/thought-bubble-post-thought.png";
 import eShop from "../../assets/images/E-Shop-Organizer-insomnia-ss.png";
 import administerMyTeam from "../../assets/images/administer-my-team-ss.png";
+//--------------------//
 
 function Project() {
-  // project objects
+  // project info objects
   const [projects] = useState([
     {
       name: 'Tech Talk',
@@ -49,7 +51,8 @@ function Project() {
       image: administerMyTeam
     },
   ]);
-// project content
+
+  // returns list of projects
   return (
     <ul className="my-5" >
       {projects.map((project) => (
@@ -73,7 +76,6 @@ function Project() {
             :
               <img alt="project screenshot" src={project.image}></img>
             }
-
             <br/><br/>
           </span>
         </li>

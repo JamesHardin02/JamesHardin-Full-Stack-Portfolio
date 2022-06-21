@@ -10,9 +10,10 @@ function Header(props) {
       currentCategory
     } = props;
   
-    useEffect(() => {
-      document.title = capitalizeFirstLetter(currentCategory.name);
-    }, [currentCategory]);
+  // updated the tab title to the current section the user has clicked to view
+  useEffect(() => {
+    document.title = capitalizeFirstLetter(currentCategory.name);
+  }, [currentCategory]);
   
   return (
     <header className="flex-row px-1">
@@ -23,9 +24,10 @@ function Header(props) {
       </h2>
       <nav>
         <Nav       
-        categories={categories}
-        setCurrentCategory={setCurrentCategory}
-        currentCategory={currentCategory}></Nav>
+          categories={categories}
+          setCurrentCategory={setCurrentCategory}
+          currentCategory={currentCategory}>
+        </Nav>
       </nav>
     </header>
   );

@@ -1,9 +1,8 @@
 import React from 'react'
-// photo of James Hardin
 import resumeImage from "../../assets/images/james-hardin-webdev-resume.jpg"
 
-function About() {
-// about section content
+function Resume() {
+// resume section content
   return (
     <section className="my-5 about-me" >
       <h1 id="about">Resume</h1>
@@ -15,4 +14,4 @@ function About() {
   )
 }
 
-export default About
+export default Resume

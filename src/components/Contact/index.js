@@ -4,10 +4,10 @@ import { validateEmail } from '../../utils/helpers';
 
 function ContactForm() {
   const [formState, setFormState] = useState({ name: '', email: '', message: '' });
-
   const [errorMessage, setErrorMessage] = useState('');
   const { name, email, message } = formState;
 
+  // this function is called when user submits their contact info
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!errorMessage) {
@@ -16,6 +16,7 @@ function ContactForm() {
     }
   };
 
+  // this function is called when the contact fields blur (are unfocused)
   const handleChange = (e) => {
     if (e.target.name === 'email') {
       const isValid = validateEmail(e.target.value);

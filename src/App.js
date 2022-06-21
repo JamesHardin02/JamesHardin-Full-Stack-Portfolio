@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import Header from './components/Header';
+// function that handles section rendering based on nav clicks by user
 import section from './utils/section'
 import Footer from './components/Footer'
 
@@ -18,9 +19,6 @@ function App() {
 
   // state to keep track of which section a user has choosen to view
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
-
-
-
   return (
     <div>
       <Header
@@ -29,7 +27,7 @@ function App() {
         currentCategory={currentCategory}
       ></Header>
       <main>
-        {section(currentCategory)}        
+        {section(currentCategory)}    
       </main>
       <Footer></Footer>
     </div>

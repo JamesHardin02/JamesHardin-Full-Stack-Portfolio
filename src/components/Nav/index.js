@@ -1,12 +1,12 @@
 import { capitalizeFirstLetter } from '../../utils/helpers';
 
 function Nav(props) {
-    // deconstruct properties sent that keep track of section choosen to view
-    const {
-      categories = [],
-      setCurrentCategory,
-      currentCategory
-    } = props;
+  // deconstruct properties sent that keep track of section choosen to view
+  const {
+    categories = [],
+    setCurrentCategory,
+    currentCategory
+  } = props;
 
   return (
     <ul className="flex-row">
