@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import Nav from './components/Nav';
 import section from './utils/section'
+import Footer from './components/Footer'
 
 function App() {
   // category sections that a user can navigate to
@@ -30,6 +31,7 @@ function App() {
       <main>
         {section(currentCategory)}        
       </main>
+      <Footer></Footer>
     </div>
   );
 }
