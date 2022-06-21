@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
-import Nav from './components/Nav';
+import Header from './components/Header';
 import section from './utils/section'
 import Footer from './components/Footer'
 
@@ -23,11 +23,11 @@ function App() {
 
   return (
     <div>
-      <Nav
+      <Header
         categories={categories}
         setCurrentCategory={setCurrentCategory}
         currentCategory={currentCategory}
-      ></Nav>
+      ></Header>
       <main>
         {section(currentCategory)}        
       </main>
