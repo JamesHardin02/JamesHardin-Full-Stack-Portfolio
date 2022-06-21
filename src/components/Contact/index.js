@@ -56,6 +56,14 @@ function ContactForm() {
         )}
         <button data-testid="button" type="submit">Submit</button>
       </form>
+      <article>
+        <p>
+          My Email: jwhusc7@gmail.com
+        </p>
+        <p>
+          My Phone Number: 704-600-7641
+        </p>
+      </article>
     </section>
   );
 }
