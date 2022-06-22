@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import Button from '@mui/material/Button'
 import { validateEmail } from '../../utils/helpers';
 
 function ContactForm() {
@@ -55,7 +55,10 @@ function ContactForm() {
             <p className="error-text">{errorMessage}</p>
           </div>
         )}
-        <button data-testid="button" type="submit">Submit</button>
+        <Button 
+        type="submit"
+        variant='contained'
+        > Submit </Button>
       </form>
       <article>
         <p>
