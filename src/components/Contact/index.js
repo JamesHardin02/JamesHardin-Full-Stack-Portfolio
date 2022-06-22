@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Button from '@mui/material/Button'
+import TextField from '@mui/material/TextField'
 import { validateEmail } from '../../utils/helpers';
 
 function ContactForm() {
@@ -39,8 +40,15 @@ function ContactForm() {
       <h1 data-testid="h1tag">Contact me</h1>
       <form id="contact-form" onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="name">Name:</label>
-          <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
+          <TextField 
+          onBlur={handleChange}
+          type="text" name="name" defaultValue={name}
+          variant="standard" color="secondary"
+          >
+
+          </TextField>
+          {/* <label htmlFor="name">Name:</label>
+          <input    /> */}
         </div>
         <div>
           <label htmlFor="email">Email address:</label>
