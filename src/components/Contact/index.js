@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import Button from '@mui/material/Button'
 import TextField from '@mui/material/TextField'
+import { ThemeProvider, createTheme } from '@mui/material/styles'
+import { orange } from '@mui/material/colors'
 import { validateEmail } from '../../utils/helpers';
 
 function ContactForm() {
@@ -12,7 +14,6 @@ function ContactForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!errorMessage) {
-      setFormState({ [e.target.name]: e.target.value });
       console.log('Form', formState);
     }
   };
@@ -33,40 +34,65 @@ function ContactForm() {
         setErrorMessage('');
       }
     }
+    if (!errorMessage) {
+      setFormState({ ...formState, [e.target.name]: e.target.value });
+    }
   };
 
+  const theme = createTheme({
+    palette: {
+      primary: {
+        main: orange[300]
+      },
+      warning: {
+        main: orange[400]
+      },
+
+    }
+  })
   return (
     <section>
-      <h1 data-testid="h1tag">Contact me</h1>
+      <h1 data-testid="h1tag">Provide your info below</h1>
       <form id="contact-form" onSubmit={handleSubmit}>
-        <div>
+        <ThemeProvider theme={theme}>
+          {/* name */}
           <TextField 
           onBlur={handleChange}
           type="text" name="name" defaultValue={name}
-          variant="standard" color="secondary"
+          variant="filled" color="warning" label="name"
+          placeholder="your name here"
           >
-
           </TextField>
-          {/* <label htmlFor="name">Name:</label>
-          <input    /> */}
-        </div>
-        <div>
-          <label htmlFor="email">Email address:</label>
-          <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
-        </div>
-        <div>
-          <label htmlFor="message">Message:</label>
-          <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} />
-        </div>
-        {errorMessage && (
-          <div>
-            <p className="error-text">{errorMessage}</p>
+          {/* email */}
+          <TextField 
+          onBlur={handleChange}
+          type="text" name="email" defaultValue={email}
+          variant="filled" color="warning" label="Email Address"
+          placeholder="email@email.com"
+          >
+          </TextField>
+          {/* message */}
+          <TextField 
+          onBlur={handleChange}
+          type="multiline" name="message" defaultValue={message}
+          variant="filled" color="warning" label="message" multiline='true'
+          minRows='5' minColumns='20'
+          >
+          </TextField>
+          {errorMessage && (
+            <div>
+              <p className="error-text">{errorMessage}</p>
+            </div>
+          )}
+          <div className='submit-button'>
+            <Button 
+            type="submit"
+            variant='contained'
+            color='primary'
+            > Submit </Button>
           </div>
-        )}
-        <Button 
-        type="submit"
-        variant='contained'
-        > Submit </Button>
+        </ThemeProvider>
+
       </form>
       <article>
         <p>
