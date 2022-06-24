@@ -2,7 +2,6 @@
 main {
 	margin: 0 auto;
 	max-width: 90%;
-  padding: 50px 30px;
 }
 :root {
   --primary: #FFA726;
@@ -12,6 +11,7 @@ main {
   --dark: #000000;
   --darker: #111111;
   --link-hover: #f1f1f1;
+  --section-hover: #434647;
   --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
@@ -90,6 +90,10 @@ a {
 
 a:hover {
   color: var(--link-hover);
+}
+
+.section-links:hover{
+  color: var(--section-hover)
 }
 
 header {
@@ -279,9 +283,7 @@ a {
 	margin-right: -2px;
 }
 
-.navActive {
-  color: var(--secondary);
-}
+
 /*ABOUT-ME STYLES*/
 .about-me{
   border: 20px, solid, var(--primary);
@@ -324,10 +326,15 @@ a {
 }
 
 .footer-links{
+  background-color: #727880;
   border: 5px solid var(--light);
   border-radius: 500px;
   margin:5px;
   padding: 5px;
+}
+
+.project-desc{
+  margin:0;
 }
 
 .website-a{
@@ -356,9 +363,41 @@ a {
 }
 
 .project-title{
+  color: var(--section-hover);
+  border: 5px solid var(--light);
+  background-color: var(--primary);
+  border-radius: 500px;
+  margin:5px;
+  margin-bottom: 10px;
+  padding: 7px;
+  /* color: var(--secondary);
+  border: 5px solid var(--primary);
+  background-color: var(--light);
+  border-radius: 500px;
+  margin:5px;
+  padding: 7px; */
+}
+
+.header{
+  width: 100%;
+  border-bottom: 7px solid #FFA726; 
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+}
+
+.section-links{
   color: var(--secondary);
   border: 5px solid var(--primary);
   background-color: var(--light);
+  border-radius: 500px;
+  margin:5px;
+  padding: 7px;
+}
+
+.navActive {
+  color: var(--section-hover);
+  border: 5px solid var(--light);
+  background-color: var(--primary);
   border-radius: 500px;
   margin:5px;
   padding: 7px;
