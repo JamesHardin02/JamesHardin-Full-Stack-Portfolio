@@ -51,9 +51,9 @@ function ContactForm() {
     }
   })
   return (
-    <section className='margin-top'>
-      <h1 data-testid="h1tag">Provide your info below</h1>
-      <form id="contact-form" onSubmit={handleSubmit}>
+    <section className='margin-top flex-col-center'>
+      <h1 className="text-center project-title" data-testid="h1tag">Contact Form</h1>
+      <form className='flex-col-center' onSubmit={handleSubmit}>
         <ThemeProvider theme={theme}>
           {/* name */}
           <TextField 
@@ -95,6 +95,7 @@ function ContactForm() {
 
       </form>
       <article>
+      <h1 className="text-center project-title">My Contact Info</h1>
         <p>
           My Email: jwhusc7@gmail.com
         </p>
