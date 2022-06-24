@@ -9,10 +9,10 @@ function Nav(props) {
   } = props;
 
   return (
-    <ul className="flex-row">
+    <ul className="text-center">
       {categories.map((category) => (
         <li
-          className={`mx-1 ${ //if currentCategory.name is the category iterated on then add navActive class
+          className={`text-center ${ //if currentCategory.name is the category iterated on then add navActive class
             currentCategory.name === category.name && `navActive`
             }`}
           key={category.name}

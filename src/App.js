@@ -20,7 +20,7 @@ function App() {
   // state to keep track of which section a user has choosen to view
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
   return (
-    <div>
+    <div className='flex-col-center'>
       <Header
         categories={categories}
         setCurrentCategory={setCurrentCategory}

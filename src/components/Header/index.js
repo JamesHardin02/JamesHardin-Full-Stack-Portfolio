@@ -16,7 +16,7 @@ function Header(props) {
   }, [currentCategory]);
   
   return (
-    <header className="flex-row px-1">
+    <header className="flex-col-center">
       <h2>
         <a data-testid="link" href="/">
           James Hardin | Full Stack Portfolio

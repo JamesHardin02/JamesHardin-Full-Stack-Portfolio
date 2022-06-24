@@ -53,9 +53,8 @@ function Portfolio() {
 
 // portfolio section content
   return (
-    <section className="my-5" >
-      <h1>Project Portfolio</h1>
-      <ul>
+    <section className="flex-col-center" >
+      <ul className='project-list'>
         <Project project={projects.techTalk}></Project>
         <Project project={projects.bookHub}></Project>
         <Project project={projects.tourGuide}></Project>
