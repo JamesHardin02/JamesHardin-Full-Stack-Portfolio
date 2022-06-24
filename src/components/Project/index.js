@@ -15,13 +15,13 @@ function Project({project}) {
         </a>
       </div>
       {project.website ?<a href={project.website} target="_blank" rel="noreferrer noopener">
-        <figure className="project-figure">
+        <figure>
           <img className="project-image" alt="project screenshot" src={project.image}></img>
           <figcaption>Click screenshot to go to deployed website</figcaption>
         </figure>
       </a>
       :
-        <figure className="project-figure">
+        <figure>
           <img className="project-image" alt="project screenshot" src={project.image}></img>
         </figure>
       }

@@ -17,7 +17,7 @@ function Header(props) {
   
   return (
     <header className="flex-col-center header">
-      <h2>
+      <h2 className='margin-top'>
         <a data-testid="link" href="/">
           James Hardin | Full Stack Portfolio
         </a>

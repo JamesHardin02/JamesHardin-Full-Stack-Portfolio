@@ -51,7 +51,7 @@ function ContactForm() {
     }
   })
   return (
-    <section>
+    <section className='margin-top'>
       <h1 data-testid="h1tag">Provide your info below</h1>
       <form id="contact-form" onSubmit={handleSubmit}>
         <ThemeProvider theme={theme}>

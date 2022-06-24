@@ -342,7 +342,7 @@ a {
   width: 300px
 }
 
-.project-figure{
+figure{
   margin: 0px;
 }
 
@@ -370,12 +370,7 @@ a {
   margin:5px;
   margin-bottom: 10px;
   padding: 7px;
-  /* color: var(--secondary);
-  border: 5px solid var(--primary);
-  background-color: var(--light);
-  border-radius: 500px;
-  margin:5px;
-  padding: 7px; */
+  font-family: none;
 }
 
 .header{
@@ -401,4 +396,17 @@ a {
   border-radius: 500px;
   margin:5px;
   padding: 7px;
+}
+
+.proficiencies{
+  margin:20px;
+}
+
+.proficiencies-ul{
+  justify-content: center;
+  padding: 0;
+}
+
+.margin-top{
+  margin-top: 10px;
 }
