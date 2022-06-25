@@ -410,3 +410,19 @@ figure{
 .margin-top{
   margin-top: 10px;
 }
+
+.about-image{
+  width: 270px;
+}
+
+@media (min-width: 600px) {
+  .about-image{
+    width: 350px;
+  }
+}
+
+@media (min-width: 845px) {
+  .about-image{
+    width: 375px;
+  }
+}

@@ -5,9 +5,9 @@ import coverImage from "../../assets/images/Headshot.jpg";
 function About() {
 // about section content
   return (
-    <section className="margin-top" >
+    <section className="margin-top flex-col-center" >
       <h1 className='project-title text-center'>About me</h1>
-      <img src={coverImage} className="my-2" style={{ width: "100%" }} alt="James Hardin" />
+      <img className='about-image' src={coverImage} alt="James Hardin" />
       <div className="my-2">
         <p>
           Graduate of UNCC Full Stack Web Development Bootcamp.
