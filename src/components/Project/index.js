@@ -8,7 +8,7 @@ function Project({project}) {
       key={project.name}
     >
       <div className="flex-col-center project-info">
-        <p className="bold-text text-center project-title">{project.name}</p>
+        <p className="bold-text text-center title">{project.name}</p>
         <p className="project-desc">{project.description}</p>
         <a href={project.github} target="_blank" rel="noreferrer noopener">
           Git Hub Repo: {project.name}

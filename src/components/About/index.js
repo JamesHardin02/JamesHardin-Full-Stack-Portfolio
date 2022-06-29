@@ -6,7 +6,7 @@ function About() {
 // about section content
   return (
     <section className="margin-top flex-col-center" >
-      <h1 className='project-title text-center'>About me</h1>
+      <h1 className='title text-center'>About me</h1>
       <img className='about-image' src={coverImage} alt="James Hardin" />
       <div className="my-2">
         <p>

@@ -38,7 +38,7 @@ function Resume() {
 // resume section content
   return (
     <section className="flex-col-center margin-top" >
-      <h1 className="project-title">Resume</h1>
+      <h1 className="title">Resume</h1>
       <img src={resumeImage} className="my-2" style={{ width: "100%" }} alt="James Hardin" />
       <div className="my-2">
       <a href={resumeImage} download="james-hardin-webdev-resume">Download resume</a>
