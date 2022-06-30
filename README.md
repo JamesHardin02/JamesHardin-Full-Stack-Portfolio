@@ -16,9 +16,11 @@ A react portfolio of my experience and skills as a full stack web developer
 - A resume section with my downloadable resume and a list of my proficiencies
 
 ## Screenshots
-About me section of the portfolio site
+About me section of the portfolio site:
+
 
 [portfolio-screenshot](https://user-images.githubusercontent.com/98061516/176742652-cac1c698-3523-430e-a56b-724b6e06df70.png)
+
 
 ## Website
 Link to portfolio site:
