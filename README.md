@@ -21,3 +21,4 @@ About me section of the portfolio site
 
 ## Website
 Link to portfolio site:
+https://jameshardin02.github.io/jameshardin-full-stack-portfolio/
