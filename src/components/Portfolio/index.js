@@ -3,9 +3,9 @@ import Project from '../Project'
 import techTalkImg from "../../assets/images/tech-talk-homepage.png"
 import bookHubImg from "../../assets/images/user-feed-page.png"
 import tourGuideImg from "../../assets/images/rwanda-tour-home-page.png"
-import thoughtBubbleImg from "../../assets/images/thought-bubble-post-thought.png"
-import eShopImg from "../../assets/images/E-Shop-Organizer-insomnia-ss.png"
-import administerMyTeamImg from "../../assets/images/administer-my-team-ss.png"
+import postANoteImg from "../../assets/images/post-a-note.png"
+import cityWeatherWatchImg from "../../assets/images/city-weather-watch.png"
+import managementPlannerImg from "../../assets/images/schedule-webpage.png"
 //--------------------//
 function Portfolio() {
     // project info objects
@@ -31,23 +31,26 @@ function Portfolio() {
           image: tourGuideImg,
           website: 'https://jameshardin02.github.io/A-Tour-Guide-Of-Rwanda/'
         },
-        thoughtBubble: { 
-          name: 'Thought Bubble', 
-          description: 'A MongoDB backend app for a social media website',
-          github: 'https://github.com/JamesHardin02/thought-bubble',
-          image: thoughtBubbleImg
+        postANote: { 
+          name: 'Post-A-Note', 
+          description: 'A RESTful Note taking app that allows users to write a note',
+          github: 'https://github.com/JamesHardin02/post-a-note',
+          image: postANoteImg,
+          website: 'https://post-a-note.herokuapp.com/'
         },
-        eShop: { 
-          name: 'E Shop Organizer', 
-          description: 'A SQL backend app for a e-commerce store',
-          github: 'https://github.com/JamesHardin02/E-Shop-Organizer',
-          image: eShopImg
+        cityWeatherWatch: { 
+          name: 'City Weather Watch', 
+          description: 'A city weather search app that uses OpenWeather One Call API 1.0',
+          github: 'https://github.com/JamesHardin02/City-Weather-Watch',
+          image: cityWeatherWatchImg,
+          website: 'https://jameshardin02.github.io/City-Weather-Watch/'
         },
-        administerMyTeam: { 
-          name: 'Administer My Team', 
-          description: 'A SQL backend content management system app to organize and keep track of employee information',
-          github: 'https://github.com/JamesHardin02/administer-my-team',
-          image: administerMyTeamImg
+        managementPlanner: { 
+          name: 'Effective Time Management Planner', 
+          description: 'A hourly schedule app that utilizes Moment.js to help a user plan their day',
+          github: 'https://github.com/JamesHardin02/effective-time-management-planner',
+          image: managementPlannerImg,
+          website: 'https://jameshardin02.github.io/effective-time-management-planner/'
         }
       }
 
@@ -58,9 +61,9 @@ function Portfolio() {
         <Project project={projects.techTalk}></Project>
         <Project project={projects.bookHub}></Project>
         <Project project={projects.tourGuide}></Project>
-        <Project project={projects.thoughtBubble}></Project>
-        <Project project={projects.eShop}></Project>
-        <Project project={projects.administerMyTeam}></Project>
+        <Project project={projects.postANote}></Project>
+        <Project project={projects.cityWeatherWatch}></Project>
+        <Project project={projects.managementPlanner}></Project>
       </ul>
     </section>
   )
