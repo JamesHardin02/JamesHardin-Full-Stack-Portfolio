@@ -22,7 +22,7 @@ function Header(props) {
           James Hardin | Full Stack Portfolio
         </a>
       </h2>
-      <nav>
+      <nav className='nav'>
         <Nav       
           categories={categories}
           setCurrentCategory={setCurrentCategory}

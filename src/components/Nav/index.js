@@ -9,7 +9,7 @@ function Nav(props) {
   } = props;
 
   return (
-    <ul className="text-center">
+    <ul className="text-center flex-center">
       {categories.map((category) => (
         <li
           className={`text-center section-links ${ //if currentCategory.name is the category iterated on then add navActive class

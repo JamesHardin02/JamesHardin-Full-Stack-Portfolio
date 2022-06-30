@@ -1,7 +1,7 @@
 function Skill({skill}){
   const { alt, image, name } = skill
   return (
-  <li className='proficiencies'>
+  <li>
     <figure className='flex-col-center'>
       <img alt={alt}src={image}></img>
       <figcaption>{name}</figcaption>
