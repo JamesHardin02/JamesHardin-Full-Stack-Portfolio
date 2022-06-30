@@ -1,6 +1,6 @@
 import React from 'react'
 import Skill from "../Skill"
-import resumeImage from "../../assets/images/james-hardin-webdev-resume.jpg"
+import resumeImage from "../../assets/images/jameshardin-web-dev-resume.jpg"
 import reactIcon from "../../assets/images/react-icon.png"
 import jsIcon from "../../assets/images/javascript-icon.png"
 import nodeJsIcon from "../../assets/images/nodejs-icon.png"
