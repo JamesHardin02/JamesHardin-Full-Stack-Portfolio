@@ -6,6 +6,7 @@ import tourGuideImg from "../../assets/images/rwanda-tour-home-page.png"
 import postANoteImg from "../../assets/images/post-a-note.png"
 import cityWeatherWatchImg from "../../assets/images/city-weather-watch.png"
 import managementPlannerImg from "../../assets/images/schedule-webpage.png"
+import dailyLoveCalendarImg from "../../assets/images/daily-love-calendar-home.png"
 //--------------------//
 function Portfolio() {
     // project info objects
@@ -16,6 +17,13 @@ function Portfolio() {
           github: 'https://github.com/JamesHardin02/tech-talk',
           image: techTalkImg,
           website: 'https://tech-talk-project.herokuapp.com/'
+        },
+        dailyLoveCalendar: { 
+          name: 'Daily Love Calendar', 
+          description: 'A website where users can create a sentimental calendar to send to loved ones',
+          github: 'https://github.com/JamesHardin02/Daily-Love-Calendar',
+          image: dailyLoveCalendarImg,
+          website: 'https://daily-love-calendar.herokuapp.com/'
         },
         bookHub: { 
           name: 'BookHub', 
@@ -59,6 +67,7 @@ function Portfolio() {
     <section className="flex-col-center" >
       <ul className='project-list'>
         <Project project={projects.techTalk}></Project>
+        <Project project={projects.dailyLoveCalendar}></Project>
         <Project project={projects.bookHub}></Project>
         <Project project={projects.tourGuide}></Project>
         <Project project={projects.postANote}></Project>
