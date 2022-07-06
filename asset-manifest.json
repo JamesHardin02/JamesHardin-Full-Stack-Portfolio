@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/jameshardin-full-stack-portfolio/static/css/main.5e1ba55b.css",
-    "main.js": "/jameshardin-full-stack-portfolio/static/js/main.946ce910.js",
+    "main.js": "/jameshardin-full-stack-portfolio/static/js/main.1e8df2d7.js",
     "static/js/787.99a73c0f.chunk.js": "/jameshardin-full-stack-portfolio/static/js/787.99a73c0f.chunk.js",
     "static/media/rwanda-tour-home-page.png": "/jameshardin-full-stack-portfolio/static/media/rwanda-tour-home-page.aa7bac05e8b2852448b6.png",
     "static/media/jameshardin-web-dev-resume.jpg": "/jameshardin-full-stack-portfolio/static/media/jameshardin-web-dev-resume.ef420e421c22ecf0b9d3.jpg",
     "static/media/user-feed-page.png": "/jameshardin-full-stack-portfolio/static/media/user-feed-page.bdfe198f9acf3a7b3809.png",
+    "static/media/daily-love-calendar-home.png": "/jameshardin-full-stack-portfolio/static/media/daily-love-calendar-home.d4546f2b7d9ef190976a.png",
     "static/media/Headshot.jpg": "/jameshardin-full-stack-portfolio/static/media/Headshot.ceb03d88ce405dd30956.jpg",
     "static/media/city-weather-watch.png": "/jameshardin-full-stack-portfolio/static/media/city-weather-watch.ba1bdc477adfbcc15ebb.png",
     "static/media/schedule-webpage.png": "/jameshardin-full-stack-portfolio/static/media/schedule-webpage.7180f6c952e46d771d99.png",
@@ -13,11 +14,11 @@
     "static/media/post-a-note.png": "/jameshardin-full-stack-portfolio/static/media/post-a-note.381f92ef89fe5431b1e5.png",
     "index.html": "/jameshardin-full-stack-portfolio/index.html",
     "main.5e1ba55b.css.map": "/jameshardin-full-stack-portfolio/static/css/main.5e1ba55b.css.map",
-    "main.946ce910.js.map": "/jameshardin-full-stack-portfolio/static/js/main.946ce910.js.map",
+    "main.1e8df2d7.js.map": "/jameshardin-full-stack-portfolio/static/js/main.1e8df2d7.js.map",
     "787.99a73c0f.chunk.js.map": "/jameshardin-full-stack-portfolio/static/js/787.99a73c0f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5e1ba55b.css",
-    "static/js/main.946ce910.js"
+    "static/js/main.1e8df2d7.js"
   ]
 }
