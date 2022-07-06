@@ -18,8 +18,7 @@ A react portfolio of my experience and skills as a full stack web developer
 ## Screenshots
 About me section of the portfolio site:
 
-
-[portfolio-screenshot](https://user-images.githubusercontent.com/98061516/176742652-cac1c698-3523-430e-a56b-724b6e06df70.png)
+![portfolio-screenshot](https://user-images.githubusercontent.com/98061516/177658156-17d9ae6d-9abc-4d73-81f9-3b20764c0845.png)
 
 
 ## Website
